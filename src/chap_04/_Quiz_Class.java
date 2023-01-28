@@ -9,7 +9,7 @@ public class _Quiz_Class {
         hamburgers[1]=new CheeseBurger();
         hamburgers[2]=new FishBurger();
 
-        System.out.println("-- 주문하신 메뉴를 만듭니다. --");
+        System.out.println("--- 주문하신 메뉴를 만듭니다. --");
         for(Hamburger burger:hamburgers){
             System.out.println(burger.name+" 만듭니다");
             System.out.print("주문하신 메뉴의 재료 : ");
