@@ -4,6 +4,7 @@ public class Camera {
     public String name;
 
     public Camera() {
+
         this("기본 카메라");
     }
     public Camera(String name) {
