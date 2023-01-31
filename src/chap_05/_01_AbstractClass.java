@@ -3,6 +3,10 @@ package chap_05;
 import chap_05.Camera.Camera;
 import chap_05.Camera.FactoryCam;
 import chap_05.Camera.SpeedCam;
+import chap_05.detector.AdvancedFireDetector;
+import chap_05.detector.Detectable;
+import chap_05.reporter.NormalReporter;
+import chap_05.reporter.Reportable;
 
 public class _01_AbstractClass {
     public static void main(String[] args) {
@@ -18,6 +22,9 @@ public class _01_AbstractClass {
 
         factoryCam.showMainFeature();
         speedCam.showMainFeature();
+
+
+
 
     }
 }
