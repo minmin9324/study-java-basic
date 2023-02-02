@@ -1,6 +1,7 @@
 package chap_06;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class _07_HashMap {
     public static void main(String[] args) {
@@ -50,7 +51,15 @@ public class _07_HashMap {
             System.out.println("value: "+key);
         }
 
+        System.out.println("-------");
 
-
+        // 순서를 보장하고 싶을때
+        HashMap<String,Integer> map2 =new LinkedHashMap<>();
+        map2.put("유재석",10);
+        map2.put("장도연",23);
+        map2.put("서강준",3);
+        map2.put("송중기",4);
+        map2.put("서장훈",6);
+        System.out.println(map2.keySet());
     }
 }
