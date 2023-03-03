@@ -2,13 +2,16 @@ package chap_07;
 
 public class _01_AnonymousClass1 {
     public static void main(String[] args) {
-        // 익명 클래스
+
         Coffee coffee1 =new Coffee();
         coffee1.order("아메리카노");
 
         Coffee coffee2 =new Coffee();
         coffee2.order("아메리카노오오오오");
 
+
+
+        // 익명 클래스 예시 1 ->  Coffee클래쓰를 확장하여 specialCoff 하나의 객체만을 위한 1회성 클래쓰
     Coffee specialCoff =new Coffee(){
         @Override
         public void order(String coffee) {
@@ -21,6 +24,7 @@ public class _01_AnonymousClass1 {
             System.out.println("넌 두고가도됨");
         }
     };
+
         specialCoff.order("바닐라라떼");
         specialCoff.returnTray();
     }
